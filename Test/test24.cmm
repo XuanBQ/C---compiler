@@ -1,0 +1,15 @@
+int i;
+struct a {
+	int i;
+	int b[10];
+};
+float func(float i, float j) {
+	int j;
+	if(i == 1.5) {
+      return 5;
+	}
+	return 6;
+}
+int main(int i) {
+	int i;
+}

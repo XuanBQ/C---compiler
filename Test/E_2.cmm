@@ -1,0 +1,49 @@
+int QuickSort(int a[10], int low, int high)
+ {
+ int i = low;
+ int j = high;
+ int temp = a[i];
+ if( low < high)
+ {
+ while(i < j)
+ {
+ while((a[j] >= temp) && (i < j))
+ {
+ j = j - 1;
+ }
+ a[i] = a[j];
+ while((a[i] <= temp) && (i < j))
+ {
+ i = i + 1;
+ }
+ a[j]= a[i];
+ }
+
+ a[i] = temp;
+ QuickSort(a,low,i-1);
+ QuickSort(a,j+1,high);
+ return 1;
+ }
+ else
+ {
+ return 0;
+ }
+ }
+
+ int main()
+ {
+ int num[10];
+ int s = 0;
+ while (s < 10) {
+ int ti = s * s + s * 2 + 4;
+ num[s] = ti - ti / (s + 1) * s + 2 * s;
+ s = s + 1;
+ }
+ QuickSort(num, 0, 9);
+ s = 0;
+ while (s < 10) {
+ write(num[s]);
+ s = s + 1;
+ }
+ return 0;
+ }

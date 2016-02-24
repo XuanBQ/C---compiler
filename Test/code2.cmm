@@ -1,0 +1,7 @@
+int main()
+{
+	int n, m;
+	n = 0;
+	m = n * n;
+}
+

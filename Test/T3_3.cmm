@@ -1,0 +1,9 @@
+int fact(int i, int j) {
+	return i + j;
+}
+
+int main() {
+	int j = 1;
+	write(fact(j, j));
+	return 0;
+}

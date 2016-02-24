@@ -1,0 +1,7 @@
+int func(int a, int b) {
+	int c = a + b;
+}
+int main() {
+	int d = func(1, 2);
+    return 0;
+}

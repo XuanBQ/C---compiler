@@ -1,0 +1,8 @@
+int fact() {
+	int i = 8 - 9;
+	return i;
+}
+int main() {
+	write( fact());
+	return 0;
+}

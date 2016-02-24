@@ -1,0 +1,7 @@
+struct a {
+	int i;
+	};
+	int main() {
+		struct a b[5];
+		b[0].i = 9;
+		}

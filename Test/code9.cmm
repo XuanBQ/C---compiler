@@ -1,0 +1,37 @@
+int print(int temp[5][6][7]) {
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	while(i < 5) {
+		j = 0;
+		while(j < 6) {
+			k = 0;
+			while(k < 7) {
+		      write(temp[i][j][k]);
+			  k = k + 1;
+			}
+			j = j + 1;
+		}
+		i = i + 1;
+	}
+	return 5;
+}
+int main() {
+	int temp[5][6][7];
+	int i = 0, j = 0, k = 0;
+	int result = 0;
+	while(i < 5) {
+		j = 0;
+		while(j < 6) { 
+			k = 0;
+			while(k < 7) {
+				temp[i][j][k] = result;
+				result = result + 1;
+				k = k + 1;
+			}
+			j = j + 1;
+		}
+		i = i + 1;
+	}
+	return print(temp);
+}
