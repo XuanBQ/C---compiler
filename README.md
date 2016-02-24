@@ -1,5 +1,6 @@
 # C---compiler
-- lexical analysis
-- parsing
-- semantic analysis
-- code generation
+- Lexical analysis
+- Syntax analysis
+- Semantic analysis
+- Intermediate-code generation
+- Code generation
